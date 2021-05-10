@@ -31,7 +31,6 @@ export default class Startup {
     let router = express.Router();
     RegisterControllers(router);
     app.use(router);
-
     app.use("", express.static(Paths.Public));
     Startup.registerErrorHandlers(app);
   }
